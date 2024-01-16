@@ -338,15 +338,11 @@ export default {
     },
 
     async fetchData(collectionName) {
-      console.log(`Entrar al fechData? ${collectionName}`)
+
       try {
         this.loading = true
-
         /* const response = await fetch(`http://localhost:3000/api/data/${collectionName}`) */
-        const response = await fetch(`https://master--valley-dojo.netlify.app/api/data/${collectionName}`, { mode: 'no-cors', credentials: 'same-origin', referrerPolicy: 'no-referrer' })
-
-        const textResponse = await response.text()
-        console.log({ 'responseMauri': textResponse })
+        const response = await fetch(`https://valley-dojo.netlify.app/api/data/${collectionName}`, { mode: 'no-cors' })
 
         const data = await response.json()
 
