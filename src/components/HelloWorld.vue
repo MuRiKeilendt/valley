@@ -340,10 +340,10 @@ export default {
     async fetchData(collectionName) {
       try {
         this.loading = true
+
         /* const response = await fetch(`http://localhost:3000/api/data/${collectionName}`) */
-
-        const response = await fetch(`http://mongodb+srv://keilendtmauricio:yqoyeQ2m7cDVxgAm@nullvalley.qpzxjad.mongodb.net/api/data/${collectionName}`)
-
+        const response = await fetch(`https://master--valley-dojo.netlify.app/api/data/${collectionName}`) 
+        
         const data = await response.json()
 
 
