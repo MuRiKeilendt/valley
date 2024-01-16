@@ -268,7 +268,7 @@ export default {
       if (votante.comentario)
 
         try {
-          const response = await fetch(`https://master--valley-dojo.netlify.app/api/data/${collectionName}`, {
+          const response = await fetch(`https://valley-dojo.netlify.app/api/data/${collectionName}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -316,7 +316,7 @@ export default {
       this.overlay = true
       this.loadReset = true
       try {
-        const response = await fetch('https://master--valley-dojo.netlify.app/api/reset-databases', {
+        const response = await fetch('https://valley-dojo.netlify.app/api/reset-databases', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
