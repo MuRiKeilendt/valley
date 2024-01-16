@@ -5,12 +5,7 @@ const { MongoClient } = require('mongodb')
 const app = express()
 const port = 3000
 
-// Habilita CORS para todas las rutas
-const corsOptions = {
-    origin: 'http://localhost:8080/',
-    optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions))
+app.use(cors())
 
 // Middleware para parsear el cuerpo de la solicitud como JSON
 app.use(bodyParser.json())
