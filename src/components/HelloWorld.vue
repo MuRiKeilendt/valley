@@ -338,6 +338,7 @@ export default {
     },
 
     async fetchData(collectionName) {
+      console.log(`Entrar al fechData? ${collectionName}`)
       try {
         this.loading = true
 
@@ -361,7 +362,7 @@ export default {
         }
 
       } catch (error) {
-        console.error('Error al obtener datos desde el servidor:', error)
+        console.error('Error al obtener datos desde el servidor:', error.message)
       } finally {
         this.loading = false
       }
