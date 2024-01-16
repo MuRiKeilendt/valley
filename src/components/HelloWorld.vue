@@ -268,7 +268,7 @@ export default {
       if (votante.comentario)
 
         try {
-          const response = await fetch(`http://localhost:3000/api/data/${collectionName}`, {
+          const response = await fetch(`https://master--valley-dojo.netlify.app/api/data/${collectionName}`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -316,7 +316,7 @@ export default {
       this.overlay = true
       this.loadReset = true
       try {
-        const response = await fetch('http://localhost:3000/api/reset-databases', {
+        const response = await fetch('https://master--valley-dojo.netlify.app/api/reset-databases', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -343,7 +343,7 @@ export default {
         this.loading = true
 
         /* const response = await fetch(`http://localhost:3000/api/data/${collectionName}`) */
-        const response = await fetch(`https://localhost:3000/api/data/${collectionName}`, { mode: 'no-cors', credentials: 'same-origin', referrerPolicy: 'no-referrer' })
+        const response = await fetch(`https://master--valley-dojo.netlify.app/api/data/${collectionName}`, { mode: 'no-cors', credentials: 'same-origin', referrerPolicy: 'no-referrer' })
 
         const textResponse = await response.text()
         console.log({ 'responseMauri': textResponse })

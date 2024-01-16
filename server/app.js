@@ -6,7 +6,11 @@ const app = express()
 const port = 3000
 
 // Habilita CORS para todas las rutas
-app.use(cors())
+const corsOptions = {
+    origin: 'https://master--valley-dojo.netlify.app',
+    optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions))
 
 // Middleware para parsear el cuerpo de la solicitud como JSON
 app.use(bodyParser.json())
