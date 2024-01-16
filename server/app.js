@@ -7,7 +7,7 @@ const port = 3000
 
 // Habilita CORS para todas las rutas
 const corsOptions = {
-    origin: 'https://master--valley-dojo.netlify.app',
+    origin: 'http://localhost:8080/',
     optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions))
