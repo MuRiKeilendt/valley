@@ -87,6 +87,6 @@ app.post('/api/reset-databases', async (req, res) => {
 })
 
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Servidor Node.js escuchando en http://localhost:${port}`)
 })
