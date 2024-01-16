@@ -5,7 +5,7 @@ module.exports = {
     proxy: {
       '/api': {
         /* target: 'http://localhost:3000', */
-        target: 'https://master--valley-dojo.netlify.app',
+        target: 'valley-dojo.netlify.app',
         ws: true,
         changeOrigin: true
       }
