@@ -344,6 +344,9 @@ export default {
         /* const response = await fetch(`http://localhost:3000/api/data/${collectionName}`) */
         const response = await fetch(`https://valley-dojo.netlify.app/api/data/${collectionName}`, { mode: 'no-cors' })
 
+        const textResponse = await response.text()
+        console.log(textResponse)
+
         const data = await response.json()
 
 
