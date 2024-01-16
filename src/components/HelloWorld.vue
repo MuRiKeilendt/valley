@@ -342,7 +342,7 @@ export default {
         this.loading = true
         /* const response = await fetch(`http://localhost:3000/api/data/${collectionName}`) */
 
-        const response = await fetch(`http://181.43.209.193/api/data/${collectionName}`)
+        const response = await fetch(`http://mongodb+srv://keilendtmauricio:yqoyeQ2m7cDVxgAm@nullvalley.qpzxjad.mongodb.net/api/data/${collectionName}`)
 
         const data = await response.json()
 
