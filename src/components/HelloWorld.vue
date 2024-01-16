@@ -341,8 +341,8 @@ export default {
 
       try {
         this.loading = true
-        /* const response = await fetch(`http://localhost:3000/api/data/${collectionName}`) */
-        const response = await fetch(`https://valley-dojo.netlify.app/api/data/${collectionName}`)
+        const response = await fetch(`http://localhost:3000/api/data/${collectionName}`, { mode: 'no-cors' })
+
 
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`)
